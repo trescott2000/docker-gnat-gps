@@ -1,6 +1,6 @@
 FROM trescott/vnc-wrapper
 
-mkdir /packages
+RUN mkdir /packages
 COPY packages/* /packages/
 
 RUN pacman -Sy
